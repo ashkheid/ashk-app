@@ -1,39 +1,56 @@
-# empty-project
+# ⭐ Level 2: Grouping by "File Types" and Features
 
-Empty project.
+As projects grow, the "Level 2" structure introduces grouping by feature within each type:
 
-## Building and running on localhost
-
-First install dependencies:
-
-```sh
-npm install
+```
+└── src/
+    ├── assets/
+    ├── api/
+    ├── configs/
+    ├── components/
+    │   ├── auth/
+    │   │   └── SignUpForm.tsx
+    │   ├── payment/
+    │   │   └── PaymentForm.tsx
+    │   ├── common/
+    │   │   └── Button.tsx
+    │   └── employees/
+    │       ├── EmployeeList.tsx
+    │       └── EmployeeSummary.tsx
+    ├── hooks/
+    │   ├── auth/
+    │   │   └── useAuth.ts
+    │   ├── payment/
+    │   │   └── usePayment.ts
+    │   └── employees/
+    │       ├── useEmployees.ts
+    │       └── useUpdateEmployee.ts
+    ├── lib/
+    ├── services/
+    ├── states/
+    └── utils/
 ```
 
-To create a production build:
+- **Project Size**: Medium to Large
+- **Advantages**:
+  - Simple & straightforward
+  - Stuff are grouped by features
+- **Disadvantages**:
+  - Logic related to a feature is still spread across multiple folder types
 
-```sh
-npm run build-prod
-```
+Now let's come back to the problem statement where the payment module needs to be modified or removed. With this structure, it's a lot easier to do that now.
 
-To create a development build:
+> ⭐ The "Level 2" folder structure is the one that I'd recommend if you don't know what to choose.
 
-```sh
-npm run build-dev
-```
+---
 
-## Running
+## Use this template for your project
 
-Open the file `dist/index.html` in your browser
-
-## Testing
-
-To run cypress:
-
-```sh
-npm cypress:open
+```bash
+npx create-ashk-app <project-name> --template by-file-and-feature
 ```
 
 ## Credits
 
-Made with [createapp.dev](https://createapp.dev/)
+- Inspired by these two articles [Folder Structures in React Projects](https://dev.to/itswillt/folder-structures-in-react-projects-3dp8) and [React Folder Structure in 5 Steps](https://www.robinwieruch.de/react-folder-structure/)
+- The webpack.config.js file is seamlessly made with [createapp.dev](https://createapp.dev/)
