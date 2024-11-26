@@ -39,6 +39,8 @@ Let's say you have a lot of code revolving around payment. One day the whole bus
 npx create-ashk-app <project-name> --template by-file
 ```
 
+OR hit the "Use this template" green button from the top.
+
 ## Credits
 
 - Inspired by these two articles [Folder Structures in React Projects](https://dev.to/itswillt/folder-structures-in-react-projects-3dp8) and [React Folder Structure in 5 Steps](https://www.robinwieruch.de/react-folder-structure/)
