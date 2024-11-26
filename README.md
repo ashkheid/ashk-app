@@ -50,6 +50,8 @@ Now let's come back to the problem statement where the payment module needs to b
 npx create-ashk-app <project-name> --template by-file-and-feature
 ```
 
+OR hit the "Use this template" green button from the top.
+
 ## Credits
 
 - Inspired by these two articles [Folder Structures in React Projects](https://dev.to/itswillt/folder-structures-in-react-projects-3dp8) and [React Folder Structure in 5 Steps](https://www.robinwieruch.de/react-folder-structure/)
