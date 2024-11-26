@@ -79,6 +79,8 @@ Choosing the right folder structure in React projects is essential and should be
 npx create-ashk-app <project-name> --template simple
 ```
 
+OR hit the "Use this template" green button from the top.
+
 ## Credits
 
 - Inspired by these two articles [Folder Structures in React Projects](https://dev.to/itswillt/folder-structures-in-react-projects-3dp8) and [React Folder Structure in 5 Steps](https://www.robinwieruch.de/react-folder-structure/)
